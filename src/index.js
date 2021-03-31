@@ -1,17 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Gender from './UseState';
+import MediaState from './MediaState';
+import instagram from './Images/news.jpeg'
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <div>
+  <App Name = "Muhammad Hassan Shafiq" Age ={21} /> <br/> <br/>
+  <Gender/> 
+  <MediaState title="React Fundamentals" body="React is an amazing library
+  for developing front end of web applications. It makes work easier
+  using the concepts of componenets" imgURL={{instagram}} />
+
+  
+
+  </div>,
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
